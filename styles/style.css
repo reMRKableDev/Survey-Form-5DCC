@@ -1,0 +1,251 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("../img/Sun-Tornado.svg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.column p {
+  margin-bottom: 5px;
+}
+
+.overflow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.site_body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site_content {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend,
+button,
+#name-label,
+#email-label,
+#number-label {
+  font-family: "Rubik Mono One";
+  color: #ff6b6b;
+  letter-spacing: 2px;
+}
+
+legend,
+button,
+#name-label,
+#email-label,
+#number-label {
+  font-size: 1.2em;
+}
+
+p,
+a,
+label {
+  font-family: "Montserrat";
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #000;
+}
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  background-color: #f7fff7;
+  background-image: url("../img/groovepaper.png");
+  width: 80%;
+  padding: 25px 50px;
+  margin: 20px;
+  box-shadow: 0 0 5px #222;
+}
+
+#title {
+  font-size: 5vw;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  animation: fadeIn ease 3s;
+}
+
+#description {
+  text-align: center;
+  color: #1a535c;
+  margin-bottom: 15px;
+  animation: fadeIn ease 3s;
+}
+
+#survey-form {
+  animation: fadeIn ease 3s;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid #1a535c;
+  border-left: 1px solid #1a535c;
+  padding: 10px;
+  font-size: 1em;
+  font-family: "Montserrat";
+  opacity: 0.6;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  opacity: 1;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 3px;
+}
+
+fieldset {
+  margin: 15px 0;
+}
+
+legend,
+input {
+  margin: 10px 0;
+}
+
+.centering {
+  text-align: center;
+}
+
+#dropdown {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  margin: 5px 0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1a535c;
+  border-left: 1px solid #1a535c;
+  overflow: auto;
+  background-color: inherit;
+  font-family: "Montserrat";
+  font-size: 1em;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: #f7fff7;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: #f7fff7;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  opacity: 1;
+}
+
+.centering {
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #1a535c;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #0c262a;
+}
+
+footer p {
+  color: #f7fff7;
+}
+
+@media (min-width: 768px) {
+  p {
+    color: tomato;
+  }
+  .column {
+    flex: 1;
+  }
+}

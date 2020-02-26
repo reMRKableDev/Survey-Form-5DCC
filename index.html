@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="site_body">
+    <main class="site_content">
+      <section class="form_container">
+        <div class="form">
+          <header>
+            <h1 id="title">Check-In Survey</h1>
+            <p id="description">
+              A good time-waster for those who really have nothing to do!
+            </p>
+          </header>
+          <form id="survey-form">
+            <div class="row">
+              <div class="column">
+                <label id="name-label">Name?</label> <br />
+                <input type="text" id="name" />
+                <br />
+                <label id="email-label">Email?</label> <br />
+                <input type="email" id="email" /><br />
+                <label id="number-label">Age?</label> <br />
+                <input type="number" id="number" min="0" max="100" />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <fieldset>
+                  <legend>How Are You?</legend>
+                  <input type="radio" name="option" />
+                  <label>Could Be Better 😕</label> <br />
+                  <input type="radio" name="option" />
+                  <label>I'm Ok 🙂</label> <br />
+                  <input type="radio" name="option" />
+                  <label>Loving Myself Right Now 🥰</label> <br />
+                </fieldset>
+              </div>
+              <div class="column">
+                <fieldset>
+                  <legend>Are You Sure?</legend>
+                  <input type="radio" name="optionOne" />
+                  <label>Ok I Lied! Life Sucks Hard</label> <br />
+                  <input type="radio" name="optionTwo" />
+                  <label>Pretty Sure</label> <br />
+                  <input type="radio" name="optionThree" />
+                  <label>I'm Lovin It... Like A Big Mac</label>
+                  <br />
+                </fieldset>
+              </div>
+            </div>
+            <fieldset>
+              <legend>
+                If You Could Be One Element, Which Would It Be?
+              </legend>
+              <select id="dropdown">
+                <option value="one">Earth 🌱</option>
+                <br />
+                <option value="two">Wind 💨</option>
+                <br />
+                <option value="three">Fire 🔥</option>
+                <br />
+                <option value="three">Water 🌊</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>What Do You Think Of The Survey So Far?</legend>
+              <input type="checkbox" value="valueOne" />
+              <label>Waste Of Time</label> <br />
+              <input type="checkbox" value="valueTwo" />
+              <label>Improved My Mood By 80%</label> <br />
+              <input type="checkbox" value="valueThree" />
+              <label>Exactly What I Needed Today</label> <br />
+            </fieldset>
+            <fieldset>
+              <legend>Final Thoughts?</legend>
+              <textarea name="comments" cols="30" rows="10"> </textarea>
+            </fieldset>
+            <div class="row centering">
+              <button type="submit" id="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="column">
+        <p>reMRKable Dev &copy; Copyright 2020</p>
+        <p>All rights reserved or whatever that means</p>
+      </div>
+    </footer>
+  </body>
+</html>
